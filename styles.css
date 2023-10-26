@@ -267,6 +267,7 @@ button:active{
     font-weight: 700;
 }
 .about-img img{
+    margin-right: 5rem;
     width: calc(100vw / 2.75);
 }
 .wrapper{
@@ -455,11 +456,12 @@ textarea {
   /*form*/
 #footer{
     position: relative;
-    background-color: #113448;
+    background-color: #09090b;
     padding: 10rem 20rem
 }
 .footer-right{
     display: flex;
+    justify-content: flex-end;
     gap: 12rem;
 }
 .footer-right svg{
@@ -700,6 +702,37 @@ label{
     display: none;
     animation: fadeIn 0.5s ease forwards;
 }
+.fs-copyright{
+    display: flex;
+    font-size: 2rem;
+    color: #fff;
+    justify-content: center;
+    background-color: #09090b;
+}
+.fs-copyright img{
+    aspect-ratio: initial;
+    width: 18rem;
+    margin-left: 0.7rem;
+}
+.map-seznam{
+    max-width: 80%;
+}
+.map-seznam img:hover{
+    transform: scale(1.02);
+}
+.map-seznam img{
+    transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+    border-radius: 20px;
+    width: 100%;
+    height: 100%;
+}
+.white-border{
+    padding-top: 2rem;
+    border-top: whitesmoke 1px solid;
+}
+.final-gap{
+    padding-bottom: 2rem;
+}
 @keyframes fadeIn {
     from { opacity: 0; }
     to { opacity: 1; }
@@ -707,6 +740,9 @@ label{
   
 .map-seznam > iframe{
     width: 500px;
+}
+.map-seznam{
+    margin-top: 1.5rem;
 }
 @media (max-width: 300px) {
     .map-seznam{
@@ -716,6 +752,12 @@ label{
 @media screen and (max-width: 1450px) {
     .margin-fix2{
         margin-left: 0rem
+    }
+    .hero-text{
+        max-width: 90%;
+    }
+    .h2{
+        max-width: 90%;
     }
     .navbar{
         display: flex;
@@ -739,6 +781,9 @@ label{
         justify-items: center;
         justify-content: center;
         text-align: center;
+    }
+    .navbar-logo svg{
+        display: none;
     }
     .filter-buttons{
         display: flex;
@@ -788,7 +833,8 @@ label{
         margin-right: 0;
     }
     .about-img img{
-        max-width: 90%;
+        margin-right: 0;
+        width: 90%;
     }
     .about-img{
         display: flex;
@@ -824,6 +870,9 @@ label{
     }
     .footer-right svg{
         padding-bottom: 3rem;
+    }
+    .footer h2{
+        margin-top: 2rem !important;
     }
     .contact-info .contact-gap{
         flex-direction: column;

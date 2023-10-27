@@ -859,6 +859,7 @@ label{
     }
     .footer-right{
         flex-direction: column;
+        align-items: center;
         gap: 2rem;
     }
     .footer-right svg{
@@ -890,9 +891,6 @@ label{
     }
     .maptip{
         display: none;
-    }
-    .map-seznam > iframe{
-        width: auto;
     }
     .lawyfix{
         flex-direction: column;
